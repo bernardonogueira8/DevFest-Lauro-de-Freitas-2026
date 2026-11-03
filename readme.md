@@ -3,7 +3,9 @@ O DevFest é um dos maiores eventos de tecnologia e desenvolvimento do mundo, pr
 
 ## Informações e Detalhes Logísticos
 Data: 07 de Novembro de 2026 (sábado)
+
 Local: SENAI Lauro de Freitas — Av. Luiz Tarquínio Pontes, 938, Jardim Aeroporto, Lauro de Freitas - BA
+
 Duração da palestra: 90 minutos (recomendamos reservar os últimos 5 minutos para perguntas/transição entre salas)
 
 ## Dataset escolhido:
