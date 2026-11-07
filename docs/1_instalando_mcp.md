@@ -7,11 +7,13 @@ O primeiro desafio foi obter a versão mais recente da extensão. A Microsoft n�
 No memento em que este artigo foi escrito, a versão mais recente é a **0.5.15**. O download manual é feito através de um link parametrizado, estruturado da seguinte forma:
 `https://marketplace.visualstudio.com/_apis/public/gallery/publishers/analysis-services/vsextensions/powerbi-modeling-mcp/[version]/vspackage?targetPlatform=[platform]`
 **Plataformas suportadas:** `win32-x64`, `win-arm64`, `linux-arm64`, `linux-x64` e `osx-arm64`.
-**Exemplo prático de download (v0.5.15 no Windows 64-bits):** [Baixar versão 0.5.15 (win32-x64)](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/analysis-services/vsextensions/powerbi-modeling-mcp/0.5.15/vspackage?targetPlatform=win32-x64&utm_source=gemini)
+**Exemplo prático de download (v1.0.1 no Windows 64-bits):** [Baixar versão 1.0.1 (win32-x64)](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/analysis-services/vsextensions/powerbi-modeling-mcp/1.0.1/vspackage?targetPlatform=win32-x64&utm_source=gemini)
 
 ## 2 Instalar a extensão no Antigravity IDE e configurando o servidor MCP
+
 ![Como instalar a extensão no Antigravity IDE e configurando o servidor MCP - YouTube](https://youtu.be/iGXkIaKhO7Y)
 Com o pacote em mãos, o próximo passo era introduzi-lo ao Antigravity IDE. O processo foi rápido e silencioso.
+
 1. Abra o Antigravity IDE e acesse a aba **Extensions**.
 2. Clique no menu **Views and More Actions…** (geralmente representado por três pontos).
 3. Selecione a opção **Install from VSIX…**.
@@ -23,27 +25,26 @@ Com o pacote em mãos, o próximo passo era introduzi-lo ao Antigravity IDE. O p
 9. Clique na opção **View Raw Config**.
 10. Cole o código JSON abaixo:
 
-	```json
-	{
-	  "mcpServers": {
-	    "powerbi-authoring-local": {
-	      "command": "C:\\Users\\[SEU_USUARIO]\\.antigravity-ide\\extensions\\analysis-services.powerbi-modeling-mcp-0.5.15\\server\\powerbi-modeling-mcp.exe",
-	      "args": [
-	        "--start",
-	        "--skip-confirmation"
-	      ]
-	    }
-	  }
-	}
-	```
+    ```json
+    {
+        "mcpServers": {
+            "powerbi-authoring-local": {
+                "command": "C:\\Users\\[SEU_USUARIO]\\.antigravity-ide\\extensions\\analysis-services.powerbi-modeling-mcp-0.5.15\\server\\powerbi-modeling-mcp.exe",
+                "args": ["--start", "--skip-confirmation"]
+            }
+        }
+    }
+    ```
 
-	**Dica de atenção:** Lembre-se de substituir `[SEU_USUARIO]` pelo nome do seu usuário do computador (como `Bernardo.silva`). O caminho abaixo já foi atualizado para refletir a pasta da versão `0.5.15`.
+    **Dica de atenção:** Lembre-se de substituir `[SEU_USUARIO]` pelo nome do seu usuário do computador (como `Bernardo.silva`). O caminho abaixo já foi atualizado para refletir a pasta da versão `0.5.15`.
+
 11. Salve e feche o arquivo `mcp_config.json`.
 12. Retorne à tela **Manage MCPs** e clique em **Refresh**.
 
 Então em poucos segundos, a IDE ficou equipada com o vocabulário e as ferramentas necessárias para entender a estrutura de um projeto do Power BI.
 
 ## 3 Testando e manipulando o Power BI via Chat
+
 O verdadeiro memento da verdade acontece no chat. Com uma pasta de trabalho aberta, testei os limites do meu novo co-piloto. A beleza do MCP é a flexibilidade; você pode conversar com diferentes tipos de origens de dados usando apenas linguagem natural.
 Sendo assim, abra o chat e encaminhe o commando:
 **Para o Power BI Desktop:**
