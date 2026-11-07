@@ -35,4 +35,3 @@ Verifiquei e realize:
 
 O conjunto de dados contém intencionalmente alguns problemas realistas de qualidade de dados, como valores ausentes, entradas inconsistentes e registros incomuns, tornando-o útil para demonstrar o processo de análise completo:
 Dados brutos → Limpeza → Análise → Visualização → Insights → Recomendações
-
